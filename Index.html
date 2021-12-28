@@ -1,0 +1,47 @@
+<!--
+Crypto Project , Projeto de Cryptografia / HTML PART
+Version: Beta0.1
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto</title>
+</head>
+
+<body>
+    <p>
+        <select class="Selects" id="SelectLeft">
+            <optgroup label="Readble Codes"></optgroup>
+            <option value="UTF-8">UTF-8</option>
+            <option value="Bin">Binary</option>
+            <option value="Hex">Hexadecimal</option>
+            <optgroup label="Cryptography"></optgroup>
+            <option value="Tzar">Cesar</option>
+            <option value="Vin">Vinegere</option>
+        </select>
+        <textarea class="TextAreas" id="TextInputLeft" cols="10" rows="1"></textarea>
+        <button id="TranslateButtonLeft" class="ButtonsTranslate" onclick="Interact('L')">Translate from Left</button>
+        <span id="KeyPositionLeft"></span>
+    </p>
+    <p>
+        <select class="Selects" id="SelectRight">
+            <optgroup label="Linguagens Legiveis"></optgroup>
+            <option value="UTF-8">UTF-8</option>
+            <option value="Bin">Binario</option>
+            <option value="Hex">Hexadecimal</option>
+            <optgroup label="Criptografias"></optgroup>
+            <option value="Tzar">Cesar</option>
+            <option value="Vin">Vinegere</option>
+        </select>
+        <textarea class="TextAreas" id="TextInputRight" cols="10" rows="1"></textarea>
+        <button id="TranslateButtonRight" class="ButtonsTranslate" onclick="Interact('R')">Translate from Right</button>
+        <span id="KeyPositionRight"></span>
+    </p>
+</body>
+<link rel="stylesheet" href="./Style.css">
+<script src="./Index.js"></script>
+</html>
