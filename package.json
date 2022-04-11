@@ -4,7 +4,7 @@
   "description": "",
   "main": "",
   "scripts": {
-    "start": "nodemon src/server/server.ts",
+    "start": "nodemon dist/server/server.js",
     "copile": "npx tsc"
   },
   "repository": {
