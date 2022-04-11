@@ -31,7 +31,7 @@ const Rd_Bin = (a) => {
     let AKP, AK = [], positionToStart = 0
     let ReferenceBase = 0
     for (let z = 1; z <= a.length; z++) {
-        if (ReferenceBase == 7) {
+        if (ReferenceBase == 15) {
             AKP = a.slice(positionToStart, z)
             AKP = Rd_BinComplainment(AKP)
             positionToStart = z
@@ -141,7 +141,7 @@ const R_PtBr = (o) => {
 const R_Bin = (o) => {
     let PotencialString = ""
     for (let z = 0; z != o.length; z++) {
-        PotencialString = PotencialString + (   "0000000000000000" + String(parseFloat(o[z]).toString(2))).slice(-8)
+        PotencialString = PotencialString + (   "0000000000000000" + String(parseFloat(o[z]).toString(2))).slice(-16)
         console.log(parseFloat(o[z]).toString(2).length)
         console.log(`Potencial String : ${PotencialString}`)
     }
