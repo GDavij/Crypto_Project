@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Android -->
+    <meta name="theme-color" content="#222" />
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#222" />
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#222" />
+    <title>Crypto Project</title>
+  </head>
+  <body>
+    <div id="root">
+      <span id="Name">Crypto_Project</span>
+      <span id="Logo">O=m</span>
+      <style>
+        body,
+        #root {
+          width: 100vw;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-grow: 0;
+          flex-shrink: 1;
+          background-color: #111;
+          color: #fff;
+        }
+        @keyframes Rotate {
+          from {
+            color: #0f0;
+            transform: rotate(0deg);
+          }
+          to {
+            color: #f00;
+            transform: rotate(360deg);
+          }
+        }
+        #Name {
+          font-size: 1rem;
+          margin-right: 2rem;
+        }
+        #Logo {
+          color: unset;
+          transition: 0.5s color;
+          font-size: 1rem;
+          animation: 1s Rotate infinite;
+        }
+      </style>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
